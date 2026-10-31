@@ -5176,6 +5176,28 @@ unsafe extern "C" {
 }
 
 unsafe extern "C" {
+    /// Enable or disable mouse passthrough for a window.
+    ///
+    /// ## Parameters
+    /// - `window`: the window to set mouse passthrough for.
+    /// - `passthrough`: true to make the window transparent to mouse input, false to capture mouse input.
+    ///
+    /// ## Return value
+    /// Returns true on success or false on failure; call [`SDL_GetError()`] for more
+    ///   information.
+    ///
+    /// ## Thread safety
+    /// This function should only be called on the main thread.
+    ///
+    /// ## Availability
+    /// This function is available since SDL 3.6.0.
+    pub fn SDL_SetWindowMousePassthrough(
+        window: *mut SDL_Window,
+        passthrough: ::core::primitive::bool,
+    ) -> ::core::primitive::bool;
+}
+
+unsafe extern "C" {
     /// Set the window as a child of a parent window.
     ///
     /// If the window is already the child of an existing window, it will be
