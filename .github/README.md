@@ -1,1 +1,3 @@
-# This repository has moved to <https://codeberg.org/maia/sdl3-sys-rs>. Please submit issues and pull requests there. Thank you.
+# Click-passthrough fork of <https://codeberg.org/maia/sdl3-sys-rs>
+
+See <https://github.com/libsdl-org/SDL/pull/14561>
